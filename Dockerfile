@@ -2,8 +2,9 @@ FROM nginxproxy/docker-gen:0.9.2 AS docker-gen
 
 FROM alpine:3.17.0
 
-ARG GIT_DESCRIBE
-ARG ACMESH_VERSION=2.9.0
+ENV DEBUG=false              \
+	DOCKER_GEN_VERSION=0.7.3 \
+	DOCKER_HOST=unix:///var/run/docker.sock
 
 ENV COMPANION_VERSION=$GIT_DESCRIBE \
     DOCKER_HOST=unix:///var/run/docker.sock \
