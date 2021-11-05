@@ -18,7 +18,9 @@
 
 [Persistent data](./Persistent-data.md)
 
-[Standalone certificates](./Standalone-certificates-(beta).md) **(Beta)**
+[Standalone certificates](./Standalone-certificates.md)
+
+[Zero SSL](./Zero-SSL.md)
 
 #### Troubleshooting:
 
