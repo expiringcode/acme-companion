@@ -15,7 +15,7 @@ RUN apk add --no-cache --virtual .build-deps git \
     && rm -rf /go/docker-gen \
     && apk del .build-deps
 
-FROM alpine:3.14.2
+FROM alpine:3.14.3
 
 ARG GIT_DESCRIBE
 ARG ACMESH_VERSION=2.8.8
