@@ -55,6 +55,8 @@ function run_le_container {
     return 1
   fi
 
+  docker cp "${GITHUB_WORKSPACE}/test/setup/dhparam.pem" "$NGINX_CONTAINER_NAME:/etc/nginx/certs/dhparam.pem"
+
   if docker run -d \
     --name "$name" \
     --volumes-from "$NGINX_CONTAINER_NAME" \
