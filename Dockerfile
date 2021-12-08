@@ -18,7 +18,7 @@ RUN apk add --no-cache --virtual .build-deps git \
 FROM alpine:3.15.0
 
 ARG GIT_DESCRIBE
-ARG ACMESH_VERSION=2.8.8
+ARG ACMESH_VERSION=2.9.0
 
 ENV COMPANION_VERSION=$GIT_DESCRIBE \
     DOCKER_HOST=unix:///var/run/docker.sock \
