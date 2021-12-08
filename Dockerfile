@@ -17,6 +17,8 @@ RUN apk add --no-cache --virtual .build-deps git \
 
 FROM alpine:3.15.0
 
+LABEL maintainer="Nicolas Duchon <nicolas.duchon@gmail.com> (@buchdag)"
+
 ARG GIT_DESCRIBE
 ARG ACMESH_VERSION=2.9.0
 
