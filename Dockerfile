@@ -1,6 +1,6 @@
 FROM nginxproxy/docker-gen:0.9.2 AS docker-gen
 
-FROM alpine:3.17.0
+FROM alpine:3.21.2
 
 ENV DEBUG=false              \
 	DOCKER_GEN_VERSION=0.7.3 \
